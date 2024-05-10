@@ -1,0 +1,8 @@
+@use 'abstracts/fonts';
+@use 'abstracts/colors';
+@use 'components/index';
+
+body {
+    font-size: fonts.$font-size;
+    color: colors.$red;
+}

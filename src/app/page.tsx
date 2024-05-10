@@ -1,10 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import '../sass/styles.scss'
 
 export default function Home() {
   return (
     <>
-    project
+      <div>project</div>
+      <br />
+      <div className="card">MK Card</div>
     </>
-  );
+  )
 }
