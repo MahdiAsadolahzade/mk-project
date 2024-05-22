@@ -1,0 +1,42 @@
+@use '../abstracts';
+
+.button {
+  @include abstracts.flex-center;
+  padding: abstracts.$spacing-sm abstracts.$spacing-md;
+  font-size: abstracts.$font-size;
+  font-family: abstracts.$font-sans;
+  border: abstracts.$border-width-thin abstracts.$border-style-solid;
+  @include abstracts.border-radius(abstracts.$border-radius-small);
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+  &--primary {
+    background-color: abstracts.$blue-500;
+    color: abstracts.$white;
+    border-color: abstracts.$blue-500;
+
+    &:hover {
+      background-color: abstracts.$blue-600;
+      border-color: abstracts.$blue-600;
+    }
+  }
+
+  &--secondary {
+    background-color: abstracts.$gray-500;
+    color: abstracts.$white;
+    border-color: abstracts.$gray-500;
+
+    &:hover {
+      background-color: abstracts.$gray-600;
+      border-color: abstracts.$gray-600;
+    }
+  }
+
+  &--disabled {
+    background-color: abstracts.$gray-300;
+    color: abstracts.$gray-600;
+    border-color: abstracts.$gray-300;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}

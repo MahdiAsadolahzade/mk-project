@@ -1,0 +1,22 @@
+@use 'colors';
+
+// Border Widths
+$border-width-thin: 1px;
+$border-width-medium: 2px;
+$border-width-thick: 4px;
+
+// Border Styles
+$border-style-solid: solid;
+$border-style-dashed: dashed;
+$border-style-dotted: dotted;
+
+// Border Colors
+$border-color-light: colors.$warm-gray-400;
+$border-color-medium: colors.$warm-gray-700;
+$border-color-dark: colors.$warm-gray-900;
+
+// Border Radii
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 16px;
+$border-radius-circle: 50%;

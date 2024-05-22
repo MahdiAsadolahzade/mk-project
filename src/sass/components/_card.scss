@@ -3,6 +3,12 @@
 
 .card {
     font-size: abstracts.$font-size;
-    color: abstracts.$red;
-    background-color: abstracts.$blue;
-}
+    color: abstracts.$warm-gray-800;
+    background-color: abstracts.$gray-100;
+    border-width: abstracts.$border-width-thin;
+    border-style: abstracts.$border-style-solid;
+    border-color: abstracts.$border-color-medium;
+    @include abstracts.border-radius(abstracts.$border-radius-small);
+    @include abstracts.box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.1));
+    @include abstracts.responsive-font-size(abstracts.$font-size);
+  }

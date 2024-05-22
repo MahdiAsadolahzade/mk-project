@@ -1,0 +1,9 @@
+@use '../abstracts';
+
+
+
+.container {
+  @include abstracts.container;
+  @include abstracts.flex-center;
+
+}

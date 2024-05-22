@@ -1,0 +1,67 @@
+// Mixins
+@use 'spacing';
+
+@mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+  }
+  
+  @mixin responsive-font-size($size) {
+    font-size: $size;
+  
+    @media (min-width: 768px) {
+      font-size: $size * 1.1;
+    }
+  
+    @media (min-width: 1024px) {
+      font-size: $size * 1.2;
+    }
+  }
+  
+  @mixin container {
+    // width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: spacing.$spacing-sm;
+    padding-right: spacing.$spacing-sm;
+    padding-top: spacing.$spacing-xs;
+    padding-bottom: spacing.$spacing-xs ;
+    
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+  
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+  
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+  
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+  

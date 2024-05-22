@@ -1,0 +1,19 @@
+@use '../abstracts/colors' ;
+
+.theme-light {
+  $body-background: colors.$teal-500;
+  $text-color: colors.$gray-900;
+
+  body {
+    background-color: colors.$gray-900;
+    color: $text-color;
+  }
+
+  a {
+    color: colors.$blue-500;
+
+    &:hover {
+      color: colors.$blue-700;
+    }
+  }
+}

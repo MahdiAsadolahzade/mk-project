@@ -1,9 +1,23 @@
-@use 'abstracts/fonts';
-@use 'abstracts/colors';
-@use 'components/index';
+// Import Abstracts
+@use 'abstracts/index' as *;
 
-body {
-    font-size: fonts.$font-size;
-    color: colors.$teal-900;
-    font-family: fonts.$font-sans;
-}
+// Import Base Styles
+// @use 'base/index' as *;
+
+// Import Components
+@use 'components/index' as *;
+
+// Import Layouts
+// @use 'layout/index' as *;
+
+// // Import Pages
+// @use 'pages/index' as *;
+
+// // Import Themes
+@use 'themes/index' as *;
+
+// // Import Utilities
+// @use 'utilities/index' as *;
+
+// // Import Vendors
+// @use 'vendors/index' as *;

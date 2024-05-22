@@ -1,0 +1,17 @@
+@use '../abstracts/colors' as *;
+
+$body-background: $cyan-50;
+$text-color: $cyan-900;
+
+body {
+  background-color: $body-background;
+  color: $text-color;
+}
+
+a {
+  color: $purple-500;
+
+  &:hover {
+    color: $purple-700;
+  }
+}
